@@ -36,7 +36,6 @@ jobs:
             else
               echo "🆕 The folder does not exist. Cloning the project..."
               git clone https://github.com/CamiloSerrano95/design-patterns.git
-              cd patterns-design
+              cd design-patterns
               ls -ls
             fi
-
