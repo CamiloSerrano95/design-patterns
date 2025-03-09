@@ -30,7 +30,7 @@ jobs:
             ls -ls
             if [ -d "design-patterns" ]; then
               echo "📦 The folder exists. Updating the project..."
-              cd patterns-design
+              cd design-patterns
               git reset --hard
               git pull origin main
             else
