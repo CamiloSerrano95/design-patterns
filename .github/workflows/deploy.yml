@@ -28,5 +28,15 @@ jobs:
           script: |
             cd /var/www/html/phpmyadmin
             ls -ls
-            git pull origin main
-            
+            if [ -d "patterns-design" ]; then
+              echo "📦 The folder exists. Updating the project..."
+              cd patterns-design
+              git reset --hard
+              git pull origin main
+            else
+              echo "🆕 The folder does not exist. Cloning the project..."
+              git clone https://github.com/CamiloSerrano95/design-patterns.git
+              cd patterns-design
+              ls -ls
+            fi
+
