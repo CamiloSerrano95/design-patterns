@@ -28,7 +28,7 @@ jobs:
           script: |
             cd /var/www/html/phpmyadmin
             ls -ls
-            if [ -d "patterns-design" ]; then
+            if [ -d "design-patterns" ]; then
               echo "📦 The folder exists. Updating the project..."
               cd patterns-design
               git reset --hard
